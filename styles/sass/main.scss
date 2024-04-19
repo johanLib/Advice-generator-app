@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import "colors";
+@import "mixins";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $Dark_Blue;
+    @include typography($color: $Light_Cyan);
+    @include flex(center, center);
+
+    .container {
+        height: 100%;
+        width: 100%;
+        @include flex(center, center);
+
+        .sr-only {
+            position: absolute;
+            width: 0.063rem;
+            height: 0.063rem;
+            padding: 0;
+            margin: -0.063rem;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        &__card {
+            width: 25rem;
+            border-radius: 1rem;
+            background-color: $Dark_Grayish_Blue;
+            position: relative;
+            text-align: center;
+            @include flex(flex-start, center);
+            flex-direction: column;
+            padding: 2rem 3rem;
+
+            &__title {
+                @include typography($fsi: 12px, $color: $Neon_Green, $transform: uppercase, $spacing: 7px);
+                margin-bottom: 15px;
+            }
+
+            &__text {
+                @include typography($fsi: 28px, $color: $Light_Cyan, $weight: 800);
+            }
+
+            &__divider {
+                width: 100%;
+                margin: 2rem 0;
+            }
+
+            @media screen and (max-width: 550px) {
+                width: 20rem;
+            }
+        }
+
+        &__card__btn {
+            position: absolute;
+            bottom: -22px;
+            background-color: $Neon_Green;
+            border: none;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            @include flex(center, center);
+
+            &:hover {
+                filter: drop-shadow(0 0 0.75rem $Neon_Green);
+                transition: all .4s ease-out;
+            }
+        }
+    }
+}

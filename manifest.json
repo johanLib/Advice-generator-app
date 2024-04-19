@@ -1,0 +1,9 @@
+{
+    "theme_color": "hsl(150, 100%, 66%)",
+    "background_color": "hsl(218, 23%, 16%)",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Advice generator app",
+    "short_name": "Advice generator app",
+    "description": "Advice generator app solution"
+}

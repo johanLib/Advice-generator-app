@@ -1,0 +1,16 @@
+@mixin flex($justify-content: unset, $align-items: unset, $direction: unset) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $direction;
+}
+
+@mixin typography($fsi: 28px, $fst: normal, $color: $color, $transform: none, $spacing: normal, $weight: 400) { 
+    font-size: $fsi;
+    font-family: "Manrope", sans-serif;
+    font-style: $fst;
+    color: $color;
+    text-transform: $transform;
+    letter-spacing: $spacing;
+    font-weight: $weight;
+}

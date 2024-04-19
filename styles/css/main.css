@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  color: hsl(193, 38%, 86%);
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+}
+body .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+}
+body .container .sr-only {
+  position: absolute;
+  width: 0.063rem;
+  height: 0.063rem;
+  padding: 0;
+  margin: -0.063rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+body .container__card {
+  width: 25rem;
+  border-radius: 1rem;
+  background-color: hsl(217, 19%, 24%);
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: unset;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+body .container__card__title {
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+body .container__card__text {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  color: hsl(193, 38%, 86%);
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 800;
+}
+body .container__card__divider {
+  width: 100%;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 550px) {
+  body .container__card {
+    width: 20rem;
+  }
+}
+body .container__card__btn {
+  position: absolute;
+  bottom: -22px;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+}
+body .container__card__btn:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+  transition: all 0.4s ease-out;
+}
+
+/*# sourceMappingURL=main.css.map */
